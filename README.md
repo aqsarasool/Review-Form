@@ -22,7 +22,7 @@ A simple and secure **Review Form API** built using **Laravel**, designed to all
 | Technology         | Purpose                 |
 | ------------------ | ----------------------- |
 | **Laravel**        | Backend Framework (PHP) |
-| **Sanctum**        | API Authentication      |
+| **Breeze**        | API Authentication      |
 | **MySQL**          | Relational Database     |
 | **Postman / cURL** | API Testing Tool        |
 
@@ -43,22 +43,14 @@ cd review-form-api
 composer install
 ```
 
-### 3. Set Up Environment
 
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-Update your `.env` file with **database credentials**.
-
-### 4. Run Migrations
+### 3. Run Migrations
 
 ```bash
 php artisan migrate
 ```
 
-### 5. Start the Server
+### 4. Start the Server
 
 ```bash
 php artisan serve
@@ -66,15 +58,6 @@ php artisan serve
 
 ---
 
-## 🔐 Authentication (Sanctum)
-
-Run:
-
-```bash
-composer require laravel/sanctum
-php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-php artisan migrate
-```
 
 ---
 
